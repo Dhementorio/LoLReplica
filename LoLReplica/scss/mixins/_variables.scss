@@ -1,0 +1,40 @@
+@use "sass:map";
+@use "sass:list";
+
+$colors: (
+        primary: black,
+        secondary: #C8AA6E,
+        third: #59C1DE,
+        fourth: white
+);
+
+@mixin reset-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration-line: none;
+}
+
+@mixin button{
+  align-content: center;
+  padding: 10px;
+  cursor: pointer;
+
+}
+
+
+@font-face {
+  font-family: 'Spiegel';
+  font-style: normal;
+  font-weight: 400;
+}
+
+$primary-color: map.get($colors, primary);
+$secondary-color: map.get($colors, secondary);
+$third-color: map.get($colors, third);
+$fourth-color: map.get($colors, fourth);
+
+
+$margin: 0;
+$padding: 0;
+$font: 'Spiegel';
