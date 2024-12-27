@@ -5,40 +5,58 @@
 }
 body {
   min-width: 100%;
-  height: 1000px;
+  height: 100%;
   padding: 0;
   margin: 0;
   font-family: "Spiegel";
   overflow-x: hidden;
 }
 
-header > .navbar {
+.navbar {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration-line: none;
-  position: sticky;
-  top: 0;
-  overflow: hidden;
   height: 5rem;
   display: flex;
-  justify-content: start;
-  width: 100vw;
+  justify-content: space-between;
   background: black;
   color: white;
 }
-header > .navbar li {
+.navbar li {
   align-content: center;
   padding: 10px;
   cursor: pointer;
   font-size: 1rem;
 }
 
+main > nav {
+  display: flex;
+}
+
 .searchbar-playbutton {
   display: flex;
+  align-items: center;
   background-color: rgb(11, 196, 226);
   color: black;
   margin: 0;
+}
+
+.searchbar {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: gray;
+}
+.searchbar i {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.web-type-logo {
+  font-size: 1.5rem;
+  color: white;
 }
 
 .lolvideo {
@@ -52,15 +70,30 @@ header > .navbar li {
   display: block;
 }
 
-.lol-logo {
+.lol-logo > img {
   max-width: 40%;
   max-height: 40%;
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
   pointer-events: none;
+}
+
+.lol-logo > .play-button {
+  max-width: 40%;
+  max-height: 40%;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  pointer-events: none;
+  background-color: #C8AA6E;
+  padding: 1.75rem;
+  outline: white solid 1px;
+  outline-offset: 3px;
 }
 
 li > a {
@@ -74,6 +107,71 @@ li > a {
 video {
   width: 100%;
   height: 100vh;
+}
+
+.featured-news {
+  margin: 2rem 3rem;
+  background-color: red;
+}
+
+.fn-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.fn-section-wrapper .game-up-p {
+  color: #C8AA6E;
+}
+
+.fn-first {
+  max-width: 30%;
+  font-size: 18px;
+  cursor: pointer;
+}
+.fn-first img {
+  max-width: 100%;
+}
+
+.fn-second {
+  max-width: 30%;
+  font-size: 18px;
+  cursor: pointer;
+}
+.fn-second img {
+  max-width: 100%;
+}
+
+.fn-third {
+  max-width: 30%;
+  font-size: 18px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.fn-third img {
+  max-width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+.fn-third img:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+.img-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.play-vid-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: black;
+  outline: white solid 1px;
+  outline-offset: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 40%;
+  left: 45%;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -5,23 +5,33 @@ $colors: (
         primary: black,
         secondary: #C8AA6E,
         third: #59C1DE,
-        fourth: white
+        fourth: white,
+        fifth: rgb(204, 204, 204),
+        sixth: rgb(10, 20, 40),
 );
 
-@mixin reset-list{
+@mixin reset-list {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration-line: none;
 }
 
-@mixin button{
+@mixin button {
   align-content: center;
   padding: 10px;
   cursor: pointer;
 
 }
 
+@mixin articles {
+  margin: 2rem 3rem;
+
+}
+
+@mixin sections {
+
+}
 
 @font-face {
   font-family: 'Spiegel';
@@ -33,6 +43,8 @@ $primary-color: map.get($colors, primary);
 $secondary-color: map.get($colors, secondary);
 $third-color: map.get($colors, third);
 $fourth-color: map.get($colors, fourth);
+$fifth-color: map.get($colors, fifth);
+$sixth-color: map.get($colors, sixth);
 
 
 $margin: 0;
