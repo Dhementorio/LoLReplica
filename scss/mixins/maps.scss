@@ -1,0 +1,20 @@
+@use "sass:map";
+
+$colors: (
+        primary: black,
+        secondary: #C8AA6E,
+        third: #59C1DE,
+        fourth: white,
+        fifth: rgb(204, 204, 204),
+        sixth: rgb(10, 20, 40),
+        seventh: #081623,
+        eighth: #7e7e7e,
+);
+$primary-color: map.get($colors, primary);
+$secondary-color: map.get($colors, secondary);
+$third-color: map.get($colors, third);
+$fourth-color: map.get($colors, fourth);
+$fifth-color: map.get($colors, fifth);
+$sixth-color: map.get($colors, sixth);
+$seventh-color: map.get($colors, seventh);
+$eighth-color: map.get($colors, eighth);
